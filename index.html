@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,7 +15,6 @@
             <picture>
               <source srcset="images/logo.webp" type="image/webp" />
               <img
-                loading="lazy"
                 src="images/logo.svg"
                 width="197"
                 height="53"
@@ -40,7 +30,7 @@
             замов собі авто із США з вигодою до 40%
           </h2>
           <p class="header__text">
-            Підбір, придбаня, доставка, растаможка, ремонт, оформленя по
+            Підбір, придбаня, доставка, розмитненя, ремонт, оформленя по
             договору
           </p>
           <a class="button" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
@@ -96,6 +86,16 @@
           </div>
           <picture class="header__images">
             <source
+              srcset="images/ford-mustang-yellow-0.5x.avif"
+              type="image/avif"
+              media="(max-width: 811px)"
+            />
+            <source
+              srcset="images/ford-mustang-yellow-0.5x.webp"
+              type="image/webp"
+              media="(max-width: 811px)"
+            />
+            <source
               srcset="images/ford-mustang-yellow.avif"
               type="image/avif"
             />
@@ -104,8 +104,8 @@
               type="image/webp"
             />
             <img
-              loading="lazy"
               src="images/ford-mustang-yellow.jpg"
+              srcset="images/ford-mustang-yellow-0.5x.jpg 811w"
               width="814"
               height="462"
               alt="ford-mustang-yellow"
@@ -197,11 +197,22 @@
       <div class="container">
         <div class="me__box">
           <picture class="me__images">
+            <source
+              srcset="images/interior-0.5x.avif"
+              type="image/avif"
+              media="(max-width: 476px)"
+            />
+            <source
+              srcset="images/interior-0.5x.webp"
+              type="image/webp"
+              media="(max-width: 476px)"
+            />
             <source srcset="images/interior.avif" type="image/avif" />
             <source srcset="images/interior.webp" type="image/webp" />
             <img
               loading="lazy"
               src="images/interior.png"
+              srcset="images/interior-0.5x.png 476w"
               width="320"
               height="606"
               alt="interior"
@@ -429,9 +440,8 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script async src="js/slick.min.js"></script>
+    <script async src="js/main.js"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@
         centerPadding: 14,
         responsive: [
           {
-            breakpoint: 810,
+            breakpoint: 811,
             settings: {
               slidesToShow: 2
             }
@@ -25,4 +25,8 @@
           }
         ]
       });
+
+    let s = new Date(2022, 07, 03, 11);
+console.log(s);
+
     });
